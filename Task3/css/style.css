@@ -27,6 +27,7 @@ a{ text-decoration: none; color: black;}
 .pr-1{ padding-right: 1%;}
 .w-90{width: 88%;}
 .w-50{ width: 50%;}
+.w-30{width: 30%;}
 .blue{ color:var(--main-blue);}
 .dark{ color: var(--dark-color);}
 .justify-end{ justify-content: end;}
@@ -326,4 +327,8 @@ li{ list-style: none;}
   font-weight: 500;
   font-size: 16px;
   border-color: var(--main-blue);
+}
+.asas-foter{
+  background-color: var(--light-bg);
+   height: 450px
 }
