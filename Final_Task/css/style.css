@@ -1,0 +1,429 @@
+body {
+    height: 1500vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif, 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+#header1 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 10000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+}
+
+
+
+
+#navbar {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#header1,
+#navbar,
+#carouselExampleIndicators {
+    transition: all 0.1s ease;
+}
+
+
+
+
+.slide img {
+    max-width: 100%;
+    max-height: 500px;
+
+}
+
+.slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.dotd {
+    width: 10px;
+    height: 10px;
+    margin: 5px;    background-color: transparent;    border: 2px solid gray;    border-radius: 0;    transition: all 0.3s ease;
+}
+
+.dotd:hover {
+    width: 12px;    height: 12px;
+    cursor: pointer;
+}
+
+.dotd.active {
+    background-color: black;    border: none;}
+
+
+
+
+
+#about {
+    left: 40%;
+}
+
+#second_card .d-flex:hover .icon i {
+    color: var(--bs-primary);
+    transition: color 0.3s ease;
+}
+
+#second_card .d-flex:hover .card-title {
+    color: var(--bs-primary);
+    transition: color 0.3s ease;
+}
+
+
+#second_card {
+    width: 20% !important;
+    left: 15%;
+    font-size: 12px;
+    box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.2);
+}
+
+.custom {
+
+    right: 85%;
+}
+
+.py-5 {
+    padding-top: 1rem !important;
+
+}
+
+.icon-box {
+    background-color: #ffffff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.count {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.text-start {
+    text-align: left;
+}
+
+.p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+
+#flip {
+    position: relative;
+
+}
+
+#front,
+#back {
+    width: 80%;
+    height: 230%;
+    backface-visibility: hidden;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+#front {
+    transform: rotateX(0);
+
+}
+
+#back {
+    transform: rotateX(90deg);
+}
+
+#flip:hover #front {
+    transform: rotateX(90deg);
+    transform: translate("", -200px);
+    transition: all 1.5s;
+}
+
+#flip:hover #back {
+    transform: rotateX(0);
+    transition: all 0.1s;
+    background-color: white;
+    color: black;
+}
+
+
+.service-section {
+    background: url('../images/service-bg.jpg') no-repeat center center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    padding: 50px 0;
+    color: white;
+    opacity: 0.9;
+}
+
+.opacity-95 {
+    opacity: 0.9;
+}
+
+.blue-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.line {
+    background-color: blue;
+    height: 2px;
+}
+
+.short {
+    width: 50px;
+
+}
+
+.long {
+    width: 100px;
+}
+
+#lef {
+    margin-left: auto !important;
+}
+
+.test2 {
+    display: none;
+    height: 80px;
+
+
+}
+
+.test:hover .test2 {
+    display: block !important;
+    box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.2);
+
+}
+
+#hover-img {
+    max-width: 95%;
+    height: 350px;
+}
+
+#team {
+    top: 85%;
+    box-shadow: 0 0 10px rgba(0, 0.2, 0, 0.1);
+    font-size: 12px;
+    width: 90%;
+}
+
+#team-line {
+    padding: 1px;
+}
+
+#team-info {
+    display: none;
+}
+
+.members:hover #team-info {
+    display: block;
+}
+
+.members:hover #team {
+    transform: translateY(-70%);
+    transition: transform 0.3s;
+}
+
+.members img {
+    height: 370px;
+    object-fit: cover;
+}
+
+.team-soc {
+    border-radius: 5px 5px 0 0;
+}
+
+.team-soc a {
+    padding: 5% 0;
+    color: white;
+    margin: 0 10px;
+    font-size: 0.8rem;
+    transition: color 0.3s;
+}
+
+.team-soc a:hover {
+    color: black;
+}
+
+#img-site {
+    width: 100%;
+    height: 100vh;
+}
+
+.pricing-table {
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#table-active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.line {
+    height: 2px;
+    background-color: #007bff;
+}
+
+.rad {
+    border-radius: 50px !important;
+}
+
+#features i {
+    font-size: 1.5rem;
+}
+
+/* Buttons for Per/Month and Per/Year */
+.toggle-container {
+    display: inline-flex;
+    border: 2px solid #007bff;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #ffffff;
+    width: fit-content;
+    padding: 5px;
+}
+
+.toggle-btn {
+    border: none;
+    background: none;
+    color: #007bff;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.toggle-btn.active {
+    background-color: #007bff;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-btn:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    color: #007bff;
+}
+
+.subscribe-box {
+    padding: 70px 0;
+    background-color: black;
+}
+
+.subscribe-title {
+    font-size: 45px;
+    font-weight: bold;
+    color: #333;
+}
+
+.subscribe-title i {
+    font-size: 50px;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.form-subscribe input[type="email"] {
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    width: 40%;
+}
+
+.form-subscribe input[type="submit"] {
+    width: 50px;
+    border-radius: 30px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.form-subscribe input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.testimonial {
+    padding: 50px 0;
+}
+.testimonial h3 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.testimonial .carousel-item {
+    text-align: center;
+}
+.testimonial .client-box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    background-color: #fff;
+}
+.testimonial .client-img img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+.testimonial .client-info {
+    display: flex;
+    align-items: center;
+}
+.testimonial .client-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.testimonial .client-role {
+    color: #007bff;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.testimonial .client-text {
+    font-size: 14px;
+    color: #555;
+}
+.testimonial .carousel-control-prev-icon,
+.testimonial .carousel-control-next-icon {
+    background-color: #007bff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
